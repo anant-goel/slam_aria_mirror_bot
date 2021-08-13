@@ -115,7 +115,7 @@ class GoogleDriveHelper:
                                      resumable=False)
         file_metadata = {
             'name': file_name,
-            'description': 'Uploaded using AT_BOTS',
+            'description': 'Uploaded using Anant Mirror Bot',
             'mimeType': mime_type,
         }
         if parent_id is not None:
@@ -535,9 +535,9 @@ class GoogleDriveHelper:
                     content += f'<b> | <a href="https://telegra.ph/{self.path[nxt_page]}">Next</a></b>'
                     nxt_page += 1
             Telegraph(access_token=telegraph_token).edit_page(path = self.path[prev_page],
-                                 title = 'AT_BOTs',
-                                 author_name='AT_BOTs',
-                                 author_url='https://t.me/AT_BOTs',
+                                 title = 'Anant Mirror Bot',
+                                 author_name='Anant Mirror Bot',
+                                 author_url='https://t.me/Anant_Goel',
                                  html_content=content)
         return
 
